@@ -79,15 +79,15 @@
     .paper-meta{font-size:0.88rem;color:var(--brown)}
     .paper-link{color:inherit;text-decoration:none;border-bottom:1px solid rgba(27,61,122,0.2);transition:color 0.2s}
     .paper-link:hover{color:var(--rust);border-color:var(--rust)}
-    .teaching-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1px;margin-bottom:3rem;background:var(--border-2)}
-    .course-card{padding:1.7rem 1.8rem;background:var(--cream);position:relative;overflow:hidden;transition:background 0.22s}
+    .teaching-grid{display:flex;flex-direction:column;gap:1px;margin-bottom:3rem;background:var(--border-2)}
+    .course-card{padding:0.9rem 1.8rem;background:var(--cream);display:flex;align-items:baseline;gap:2rem;position:relative;overflow:hidden;transition:background 0.22s}
     .course-card::after{content:"";position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(to right,var(--rust),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform 0.3s}
     .course-card:hover{background:#FDFAF5}
     .course-card:hover::after{transform:scaleX(1)}
-    .course-number{position:absolute;top:0.8rem;right:1.2rem;font-family:"Cormorant Garamond",serif;font-size:3.8rem;font-weight:300;color:rgba(27,61,122,0.06);line-height:1}
-    .course-level{font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--warm-gray);margin-bottom:0.4rem}
-    .course-name{font-family:"Cormorant Garamond",serif;font-size:1.2rem;font-weight:600;color:var(--ink);line-height:1.3;margin-bottom:0.35rem}
-    .course-institution{font-size:0.83rem;color:var(--brown)}
+    .course-number{font-family:"Cormorant Garamond",serif;font-size:1rem;font-weight:400;color:var(--warm-gray-2);min-width:2rem;flex-shrink:0}
+    .course-level{font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--warm-gray);min-width:12rem;flex-shrink:0}
+    .course-name{font-family:"Cormorant Garamond",serif;font-size:1.1rem;font-weight:600;color:var(--ink);flex:1}
+    .course-institution{font-size:0.8rem;color:var(--warm-gray-2);min-width:8rem;text-align:right;flex-shrink:0}
     .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
     .contact-detail{display:flex;flex-direction:column;gap:1.3rem;margin-bottom:2.5rem}
     .contact-row{display:flex;gap:1.5rem;align-items:flex-start}
@@ -215,12 +215,12 @@
 </section><section id="teaching">
 <div class="section-header reveal"><p class="section-eyebrow">Education</p><h2>Teaching &amp; <em>Courses</em></h2></div>
 <div class="sub-label reveal">Indian School of Business</div>
-<div class="teaching-grid" style="grid-template-columns:1fr 1fr;">
+<div class="teaching-grid">
 <div class="course-card reveal"><span class="course-number">01</span><p class="course-level">PGP-YL</p><p class="course-name">Fundamentals of Economics</p><p class="course-institution">FDEC</p></div>
 <div class="course-card reveal"><span class="course-number">02</span><p class="course-level">PGP-PRO</p><p class="course-name">Global Economics</p><p class="course-institution">GLEC</p></div>
 </div>
 <div class="sub-label reveal">Shiv Nadar University</div>
-<div class="teaching-grid" style="grid-template-columns:repeat(5,1fr);">
+<div class="teaching-grid">
 <div class="course-card reveal"><span class="course-number">03</span><p class="course-level">Undergraduate</p><p class="course-name">Principles of Macroeconomics</p><p class="course-institution">ECO 102</p></div>
 <div class="course-card reveal"><span class="course-number">04</span><p class="course-level">Graduate</p><p class="course-name">Macroeconomics II</p><p class="course-institution">ECO 512</p></div>
 <div class="course-card reveal"><span class="course-number">05</span><p class="course-level">Graduate — 1st Half</p><p class="course-name">Open-Economy Macroeconomics &amp; International Trade</p><p class="course-institution">ECO 632</p></div>
@@ -228,7 +228,7 @@
 <div class="course-card reveal"><span class="course-number">07</span><p class="course-level">Graduate — 2nd Half</p><p class="course-name">Computational Economics</p><p class="course-institution">ECO 518</p></div>
 </div>
 <div class="sub-label reveal">Stony Brook University</div>
-<div class="teaching-grid" style="grid-template-columns:repeat(4,1fr);">
+<div class="teaching-grid">
 <div class="course-card reveal"><span class="course-number">08</span><p class="course-level">Instructor</p><p class="course-name">Intermediate Macroeconomics</p><p class="course-institution">ECO 305 · Summer 2017–19, Fall 2018–19, Spring 2020</p></div>
 <div class="course-card reveal"><span class="course-number">09</span><p class="course-level">Teaching Assistant</p><p class="course-name">Intermediate Macroeconomics</p><p class="course-institution">ECO 305 · Spring 2017–18, Fall 2017</p></div>
 <div class="course-card reveal"><span class="course-number">10</span><p class="course-level">Teaching Assistant</p><p class="course-name">Mathematical Statistics</p><p class="course-institution">ECO 320 · Spring 2019</p></div>
