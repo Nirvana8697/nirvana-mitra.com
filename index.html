@@ -80,7 +80,7 @@
     .paper-link{color:inherit;text-decoration:none;border-bottom:1px solid rgba(27,61,122,0.2);transition:color 0.2s}
     .paper-link:hover{color:var(--rust);border-color:var(--rust)}
     .teaching-grid{display:flex;flex-direction:column;gap:1px;margin-bottom:3rem;background:var(--border-2)}
-    .course-card{padding:0.9rem 1.8rem;background:var(--cream);display:flex;align-items:baseline;gap:2rem;position:relative;overflow:hidden;transition:background 0.22s}
+    .course-card{padding:0.9rem 1.8rem;background:var(--cream);display:flex;align-items:baseline;gap:1.5rem;position:relative;overflow:hidden;transition:background 0.22s;flex-wrap:wrap}
     .course-card::after{content:"";position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(to right,var(--rust),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform 0.3s}
     .course-card:hover{background:#FDFAF5}
     .course-card:hover::after{transform:scaleX(1)}
@@ -124,7 +124,8 @@
     .news-text a.paper-link{color:var(--ink)!important;border-bottom-color:rgba(12,15,24,0.25)!important}
     .news-text a.paper-link:hover{color:var(--rust)!important}
     @keyframes pulse-dot{0%,100%{opacity:1}50%{opacity:0.5}}
-      </style>
+    @media(max-width:600px){.course-card{flex-direction:column;gap:0.15rem;padding:0.85rem 1.2rem}.course-level{min-width:unset}.course-institution{min-width:unset;text-align:left}.course-number{display:none}}
+  </style>
 </head>
 <body>
 <nav>
